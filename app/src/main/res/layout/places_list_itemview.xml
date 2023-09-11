@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="220dp"
+    android:gravity="top">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        app:cardCornerRadius="30dp"
+        app:cardElevation="6dp">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/list_featured_image"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/img_1"
+                android:scaleType="centerCrop"/>
+
+                <LinearLayout
+                    android:id="@+id/ll_place_name_container"
+                    android:layout_marginHorizontal="30dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_gravity="bottom|center"
+                    android:gravity="center"
+                    android:paddingVertical="15dp"
+                    android:background="@drawable/rounded_corner_card"
+                    >
+
+                    <TextView
+                        android:id="@+id/list_place_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif-black"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/place_view_text_size" />
+
+                    <Space
+                        android:layout_width="5dp"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:id="@+id/list_country_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/place_view_text_size" />
+
+
+                </LinearLayout>
+
+        </FrameLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

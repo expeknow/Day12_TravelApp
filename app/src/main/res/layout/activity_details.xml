@@ -1,0 +1,324 @@
+    <?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00000000">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".DetailsActivity">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="420dp"
+            >
+
+            <LinearLayout
+                android:id="@+id/ll_details_image_card"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:backgroundTint="@color/white"
+                >
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:id="@+id/place_imageView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:adjustViewBounds="true"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/img_1"
+                    app:shapeAppearance="@style/CornerCut"
+                    />
+
+            </LinearLayout>
+
+            <ImageButton
+                android:id="@+id/back_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:background="@drawable/back_button_shape"
+                android:contentDescription="hh"
+                android:padding="12dp"
+                android:src="@drawable/back"
+                app:tint="@color/white" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:gravity="start"
+                android:orientation="vertical"
+                android:background="@drawable/details_page_text_gradient_bg"
+                android:paddingHorizontal="30dp">
+
+                <TextView
+                    android:id="@+id/booking_price"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-black"
+                    android:shadowColor="#000000"
+                    android:shadowDx="1"
+                    android:shadowDy="1"
+                    android:shadowRadius="2"
+                    android:text="$995"
+                    android:textColor="@color/white"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif"
+                    android:shadowColor="#000000"
+                    android:shadowDx="1"
+                    android:shadowDy="1"
+                    android:shadowRadius="2"
+                    android:text="Get into our new"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/details_page_place_title_fontsize" />
+
+                <TextView
+                    android:id="@+id/attraction_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-black"
+                    android:shadowColor="#000000"
+                    android:shadowDx="1"
+                    android:shadowDy="1"
+                    android:shadowRadius="2"
+                    tools:text="Sea Haven"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/details_page_place_title_fontsize" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_gravity="bottom"
+                    android:paddingVertical="20dp"
+                    android:gravity="bottom"
+                    >
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        >
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:id="@+id/featured_person_profile1"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:src="@drawable/p1"
+                            app:civ_border_color="@color/white"
+                            app:civ_border_width="2dp"/>
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:id="@+id/featured_person_profile2"
+                            android:layout_width="70dp"
+                            android:layout_height="40dp"
+                            android:src="@drawable/p2"
+                            android:paddingStart="25dp"
+                            app:civ_border_color="@color/white"
+                            app:civ_border_width="2dp"/>
+
+                        <TextView
+                            android:id="@+id/total_featured_person_text"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:fontFamily="sans-serif-medium"
+                            android:gravity="center"
+                            android:shadowColor="@color/black"
+                            android:shadowDx="1"
+                            android:shadowDy="1"
+                            android:shadowRadius="2"
+                            tools:text="Sofia, Lauren and 13 More"
+                            android:textColor="@color/white"
+                            android:textSize="13sp" />
+
+
+
+                    </FrameLayout>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+
+
+
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="15dp"
+            android:weightSum="3">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scaleX="0.5"
+                    android:scaleY="0.5"
+                    android:src="@drawable/shield"
+                    app:tint="@color/gray" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-medium"
+                    android:text="Verified"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-medium"
+                    android:text="Users"
+                    android:textSize="15sp" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scaleX="0.5"
+                    android:scaleY="0.5"
+                    android:src="@drawable/plan"
+                    app:tint="@color/gray" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-medium"
+                    android:text="Roadtrip"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-medium"
+                    android:text="Plan"
+                    android:textSize="15sp" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scaleX="0.5"
+                    android:scaleY="0.5"
+                    android:src="@drawable/breakfast"
+                    app:tint="@color/gray" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-medium"
+                    android:text="Breakfast"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-medium"
+                    android:text="Included"
+                    android:textSize="15sp" />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/place_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="30dp"
+            android:paddingVertical="10dp"
+            android:text="@string/sample_description_text"
+            android:textSize="15sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:orientation="horizontal"
+        android:paddingHorizontal="30dp"
+        android:paddingTop="30dp"
+        android:paddingBottom="10dp"
+        android:background="@drawable/action_buttons_bg_gradient">
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/favorite"
+            android:background="@drawable/heart_shape"
+            android:padding="@dimen/button_padding"/>
+
+        <Space
+            android:layout_width="20dp"
+            android:layout_height="0dp"/>
+
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/compass"
+            android:background="@drawable/compass_shape"
+            android:padding="@dimen/button_padding"/>
+
+        <Space
+            android:layout_width="20dp"
+            android:layout_height="0dp"/>
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/book_now_btn_shape"
+            android:fontFamily="sans-serif-black"
+            android:text="@string/book_now"
+            android:textColor="#13CD0C"
+            android:textSize="15sp" />
+
+
+    </LinearLayout>
+
+</FrameLayout>
+

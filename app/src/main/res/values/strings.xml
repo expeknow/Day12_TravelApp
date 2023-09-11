@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Day12_TravelApp</string>
+    <string name="more_options">more_options</string>
+    <string name="discover">Discover</string>
+    <string name="new_adventures">new adventures</string>
+    <string name="homepage_subheader">More than 50 new adventures</string>
+    <string name="sample_description_text">Railay Beach, located in Krabi, Thailand, is renowned for its stunning limestone cliffs, crystal-clear waters, and peaceful atmosphere. Accessible only by boat, Railay Beach offers a secluded paradise for beach lovers and adventure enthusiasts. Enjoy rock climbing, kayaking, or simply unwind on the soft sand while taking in the beauty of this tropical oasis.</string>
+    <string name="book_now">BOOK NOW</string>
+</resources>

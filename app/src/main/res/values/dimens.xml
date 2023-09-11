@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="place_view_text_container_radius">20dp</dimen>
+    <dimen name="place_view_text_size">16sp</dimen>
+    <dimen name="homepage_header_font_size">23sp</dimen>
+    <dimen name="homepage_subheader_font_size">14sp</dimen>
+    <dimen name="details_page_image_card_radius">50dp</dimen>
+    <dimen name="details_page_place_title_fontsize">28sp</dimen>
+    <dimen name="button_padding">15dp</dimen>
+</resources>
